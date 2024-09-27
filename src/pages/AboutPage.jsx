@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutPage = () => {
   return (
-    <div>
+    <div className='container mx-auto'>
       <h1>AboutPage</h1>
     </div>
   )

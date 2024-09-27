@@ -4,12 +4,17 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        Poppins: ["Poppins", "system-ui"],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
+        priamryColor: "#222222",
+        secondaryColor: "#7B7B7B",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

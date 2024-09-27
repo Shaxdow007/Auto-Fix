@@ -2,8 +2,8 @@ import React from 'react'
 
 const ServicesPage = () => {
   return (
-    <div>
-      <h1>NotFoundPage</h1>
+    <div className='container mx-auto'>
+      <h1>ServicesPage</h1>
     </div>
   )
 }

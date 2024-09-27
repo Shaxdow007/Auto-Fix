@@ -31,11 +31,10 @@ export const router = createBrowserRouter([
         path: "/contact-us",
         element: <ContactPage />,
       },
-      {
-        path: "*",
-        element: <NotFoundPage />,
-      },
     ]
   },
-  
+  {
+    path: "*",
+    element: <NotFoundPage />,
+  },
 ]);
