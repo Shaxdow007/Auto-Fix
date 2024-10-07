@@ -1,9 +1,12 @@
+import HeroGallery from '@/components/gallery/HeroGallery'
 import React from 'react'
 
 const GalleryPage = () => {
   return (
-    <div className='container mx-auto'>
-      <h1>GalleryPage</h1>
+    <div>
+      <div className='space-y-12'>
+        <HeroGallery />
+      </div>
     </div>
   )
 }

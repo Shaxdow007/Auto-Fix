@@ -65,20 +65,62 @@
   }
   html {
     @apply font-Poppins;
+    scroll-behavior: smooth;
   }
   body {
     @apply bg-background text-foreground;
+    @apply bg-priamryColor;
   }
   .hero-section {
-    height: calc(100vh - 80px);
+    height: 100vh;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.5)),
+      url("./images/redbgcar.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .appointment {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.5)),
+      url("./images/redbg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .btn {
+    @apply capitalize inline-block rounded bg-red-600 px-5 py-3 text-sm font-medium text-white hover:bg-red-700 focus:outline-none focus:ring;
   }
   .title {
-    @apply capitalize text-6xl;
+    @apply capitalize text-2xl md:text-4xl lg:text-6xl text-white;
   }
   .sous-title {
-    @apply uppercase text-lg text-red-600;
+    @apply first-letter:capitalize text-sm md:text-base lg:text-lg text-red-600;
   }
   .icon {
-    @apply w-4 h-4 flex items-center justify-center bg-red-600 p-4 rounded-full text-white;
+    @apply flex items-center justify-center bg-red-600 p-4 rounded-full text-white;
+  }
+  .hero-pages {
+    height: 350px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hero-pages.hero-services {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.5)),
+      url("./images/redbg.jpg");
+  }
+  .hero-pages.hero-about {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.5)),
+    url("./images/whitebgcar.jpg");
+  }
+  .hero-pages.hero-gallery {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.5)),
+    url("./images/bluebgcar.jpg");
+  }
+  .hero-pages.hero-contact {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.5)),
+    url("./images/bgcarwhite.jpg");
+  }
+  .brands {
+    filter: grayscale(100%);
   }
 }

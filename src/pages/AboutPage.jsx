@@ -1,9 +1,14 @@
+import HeroAbout from '@/components/aboutUs/HeroAbout'
+import OurStory from '@/components/aboutUs/OurStory'
 import React from 'react'
 
 const AboutPage = () => {
   return (
-    <div className='container mx-auto'>
-      <h1>AboutPage</h1>
+    <div>
+      <div className="space-y-12">
+        <HeroAbout />
+        <OurStory />
+      </div>
     </div>
   )
 }

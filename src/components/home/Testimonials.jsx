@@ -1,4 +1,5 @@
 import React from 'react'
+import OurClient from './OurClient'
 
 const Testimonials = () => {
   return (
@@ -6,6 +7,9 @@ const Testimonials = () => {
       <div className="text-center">
         <h3 className="sous-title">Testimonials</h3>
         <h2 className="title">what our clients say</h2>
+      </div>
+      <div>
+        <OurClient />
       </div>
     </section>
   )

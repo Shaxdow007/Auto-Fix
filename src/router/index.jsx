@@ -12,10 +12,6 @@ export const router = createBrowserRouter([
     element : <Layout />,
     children: [
       {
-        path: "/",
-        element: <HomePage />,
-      },
-      {
         path: "/about-us",
         element: <AboutPage />,
       },
@@ -32,6 +28,10 @@ export const router = createBrowserRouter([
         element: <ContactPage />,
       },
     ]
+  },
+  {
+    path: "/",
+    element: <HomePage />,
   },
   {
     path: "*",

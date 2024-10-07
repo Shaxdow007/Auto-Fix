@@ -6,8 +6,8 @@ const NotFoundPage = () => {
     <>
       <div className="flex h-screen flex-col bg-white">
         <img
-          src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"
-          alt=""
+          src="./images/bluebgcar.jpg"
+          alt="not found"
           className="h-64 w-full object-cover"
         />
 
@@ -23,7 +23,7 @@ const NotFoundPage = () => {
 
             <Link
               to={"/"}
-              className="mt-6 inline-block rounded bg-indigo-600 px-5 py-3 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring"
+              className="btn mt-6"
             >
               Go Back Home
             </Link>

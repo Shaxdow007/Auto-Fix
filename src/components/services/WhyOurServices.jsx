@@ -1,7 +1,7 @@
 import React from "react";
 import { BadgeCheck, DollarSign, Rabbit, ShieldCheck } from 'lucide-react';
-const WhatWeProvide = () => {
-  const WhatWeProvide = [
+const WhyOurServices = () => {
+  const WhyOurServices = [
     {
       icon:<DollarSign color="#ffffff"/>,
       title: "competitive pracing",
@@ -24,8 +24,13 @@ const WhatWeProvide = () => {
     },
   ];
   return (
-    <div className="my-8">
-      {WhatWeProvide.map((item, index) => {
+    <div className="container mx-auto p-4">
+      <div className="space-y-2 mb-8 text-center">
+        <h2 className="title">why choose us?</h2>
+        <h3 className="sous-title">we're here for whatever you need</h3>
+      </div>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
+      {WhyOurServices.map((item, index) => {
         const { icon, title, text } = item;
         return (
           <div className="flex items-center gap-6 p-4 rounded-md transition-all duration-300 hover:bg-gray-400/10" key={index}>
@@ -38,7 +43,8 @@ const WhatWeProvide = () => {
         );
       })}
     </div>
+    </div>
   );
 };
 
-export default WhatWeProvide;
+export default WhyOurServices;
